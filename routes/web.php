@@ -24,7 +24,7 @@ Route::group(['prefix' => "/admin", 'namespace' => "admin"], function () {
 
 
     Route::post('/store', 'CategoryController@store')->name('category.store');
-    Route::post('/destroy/{id}', 'CategoryController@destroy')->name('category.destroy');
+    // Route::post('/destroy/{id}', 'CategoryController@destroy')->name('category.destroy');
 
     Route::put('/update/{id}', 'CategoryController@update')->name('category.update');
 });
